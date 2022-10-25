@@ -1,0 +1,133 @@
+<!--
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fluxo de leitura</title>
+
+    <style>
+        h1 {
+            background: blue;
+        }
+
+        #super-title {
+            background: red;
+        }
+
+        h1 {
+            background: green;
+        }
+
+        strong {
+            color: blueviolet;
+        }
+
+        .my-text strong {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="super-title">Testando Especificidade</h1>
+    <p class="my-text"><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Alias aliquid tempore
+        non nisi quis! <br>
+        Quae excepturi repudiandae optio neque minus ut fugiat! <br>
+        Provident accusantium magnam, enim incidunt veniam voluptas tenetur?
+    </p>
+    <h1 class="my-title-2">Testando Especificidade</h1>
+    <p class="my-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid tempore non nisi quis!
+        <br>
+        <strong>Quae excepturi repudiandae</strong> optio neque minus ut fugiat! <br>
+        Provident accusantium magnam, enim incidunt veniam voluptas tenetur?
+    </p>
+</body>
+
+</html>
+-->
+
+<!--
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body ul li {
+            background: green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        }
+    
+    body > ul {
+        background-color: red;
+    }    
+    </style>
+
+    <title>Fluxo de leitura</title>
+</head>
+
+<body>
+    <div>
+        <p>Teste</p>
+    </div>
+
+    <ul>
+        <li>Testando combinadores</li>
+    </ul>
+
+    <div>Outro formato</div>
+
+    <section>
+        <div>
+            <ul>
+                <li>Outro marcador</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1+p {
+            color: green;
+        }
+    </style>
+
+    <title>Fluxo de leitura</title>
+</head>
+
+<body>
+    <h1>Título</h1>
+
+    <p>Mais um parágrafo</p>
+
+    <button>Enviar</button>
+
+    <p>Outro parágrafo</p>
+</body>
+
+</html>
